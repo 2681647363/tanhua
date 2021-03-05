@@ -1,0 +1,32 @@
+server:
+  port: 10880
+dubbo:
+  application:
+    name: tanhua-server
+  registry:
+    address: zookeeper://192.168.136.160:2181
+  consumer:
+    check: false
+# log
+logging:
+  level:
+    root: info
+    com:
+      tanhua: debug
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %msg - %logger{15}%n\'
+tanhua:
+  # jwt 的密钥
+  secret: 76bd425b6f29f7fcc2e0bfc286043df1
+  # 大宇短信
+  sms:
+    validateCodeTemplateCode: SMS_189616640
+    signName: 黑马程序员
+    parameterName: code
+    accessKeyId: LTAI4GARN5zTxDNnkKmAQUzX
+    accessKeySecret: mVRMvjbbYI3BPnwkj1i8sXi5nLuo4i
+  redisValidateCodeKeyPrefix: VALIDATECODE_
+spring:
+  redis:
+    host: 192.168.136.160
+    port: 6379
