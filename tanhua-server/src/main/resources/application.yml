@@ -26,6 +26,18 @@ tanhua:
     accessKeyId: LTAI4GARN5zTxDNnkKmAQUzX
     accessKeySecret: mVRMvjbbYI3BPnwkj1i8sXi5nLuo4i
   redisValidateCodeKeyPrefix: VALIDATECODE_
+  #阿里云oss
+  oss:
+    endpoint: http://oss-cn-shenzhen.aliyuncs.com
+    bucketName: zxxtanhuaitcast
+    url: https://zxxtanhuaitcast.oss-cn-shenzhen.aliyuncs.com
+    accessKeyId: LTAI4GDoCD8KXkmKBWvxaafn
+    accessKeySecret: SOUAjPtYNsjbq8y27dB3PQcSTbc0BS
+  #百度云人脸识别
+    face:
+      appId: 23750938
+      apiKey: fSbB6ATpQ0Ifwl76bIU1Rtub
+      secretKey: XUNzKLxN5UuUrWjyHQtkkhU55AvAifLA
 spring:
   redis:
     host: 192.168.136.160
